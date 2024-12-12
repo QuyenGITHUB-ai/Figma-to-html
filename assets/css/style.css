@@ -7,4 +7,80 @@ html {
 /* Khôi phục lại cỡ chữ mặc định theo rem */
 body {
   font-size: 1.6rem;
+  /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+  font-family: "Work Sans", sans-serif;
+}
+/*Tạo nhóm dùng chung để code thuộc tính dùng chung ....COMMOM....cho cả trang web */
+a {
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0px 16px;
+  line-height: 50px;
+  color: #ffff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: black;
+}
+.main-content {
+  width: 1170px;
+  min-width: 100% - 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ............Header........ */
+.header {
+  background-color: rgb(248, 248, 196);
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+/* Class Body là con của class header và nó ôm class logo, nav, btn */
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+nav {
+  margin-left: auto;
+}
+nav ul {
+  display: flex;
+}
+.nav a {
+  position: relative;
+  color: #14171f;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+.nav li.Active a,
+.nav a:hover {
+  color: #14171f;
+  /* font-weight: 600; */
+  /* Code khi re chuột vào ko ảnh hưởng tới mục bên cạnh (nhòe...) */
+  text-shadow: 1px 0 0 currentColor;
+}
+.nav li.Active a::after {
+  position: absolute;
+  left: 24px;
+  bottom: 6px;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #0f0e0e;
+}
+.header .btn-sign-up {
+  min-width: 144px;
+}
+.header .action {
+  margin-left: 49px;
 }

@@ -4,11 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>html to figma</title>
   </head>
-  <body>
-    <h1>Figma to html</h1>
-    <h2>Demo</h2>
+  <body style="height: 10000px">
+    <!-- header -->
+    <header class="header fixed">
+      <!-- Tạo class main conten để tái sử dụng lại độ rộng các phần tử qua các phần-->
+      <div class="main-content">
+        <!-- Vì các phần tử trong header xoay ngang ra, ên ý tưởng dùng class để bọc thẻ đó lại  -->
+        <div class="body">
+          <!-- Logo -->
+          <img src="./assets/img/logo.svg" alt="lesson" class="logo" />
+          <!-- Navigation -->
+          <!-- Thẻ nav là thẻ có ngữ nghĩa giúp cho trình duyệt biết đó là thanh menu or thanh điều hướng website-->
+          <nav class="nav">
+            <ul>
+              <li class="Active">
+                <a href="#!">Home</a>
+              </li>
+              <li>
+                <a href="#!">Course</a>
+              </li>
+              <li>
+                <a href="#!">Pricing</a>
+              </li>
+              <li>
+                <a href="#!">Review</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Button -->
+          <div class="action">
+            <a href="#!" class="btn btn-sign-up">Sing Up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
   </body>
 </html>
