@@ -20,6 +20,14 @@ body {
 a {
   text-decoration: none;
 }
+.heading-lever2 {
+  color: black;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.76px;
+}
 .btn {
   display: inline-block;
   min-width: 118px;
@@ -229,4 +237,42 @@ nav ul {
 }
 .hero .stats strong:nth-child(2) {
   margin-left: 28px;
+}
+/* *******popular******* */
+.popular {
+  padding: 65px 0;
+  /* background-color: blue; */
+  margin-top: 135px;
+}
+.popular-top .desc {
+  margin-top: 16px;
+  width: 458px;
+  color: black;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+.popular-top .control {
+  display: flex;
+  gap: 18px;
+}
+.popular-top {
+  display: flex;
+  /* Căn giữa theo chiều dọc */
+  align-items: center;
+  justify-content: space-between;
+}
+.popular-top .control-btn {
+  /* Căn giữa theo chiều ngang */
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--frimary-color);
+}
+.popular-top .control-btn:hover {
+  background: var(--frimary-color);
+  color: #fff;
+  cursor: pointer;
 }
