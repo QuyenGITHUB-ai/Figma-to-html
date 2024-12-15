@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --font-heading: "Work Sans", sans-serif;
+  --frimary-color: rgb(217, 235, 29);
+}
 html {
   font-size: 62, 5%;
 }
@@ -25,8 +29,11 @@ a {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: 999px;
   background-color: black;
+}
+.btn:hover {
+  opacity: 0.6;
 }
 .main-content {
   width: 1170px;
@@ -36,9 +43,10 @@ a {
 }
 /* ............Header........ */
 .header {
-  background-color: rgb(248, 248, 196);
+  background-color: #f6f1f1;
 }
 .header.fixed {
+  z-index: 1;
   position: sticky;
   top: -28px;
 }
@@ -83,4 +91,142 @@ nav ul {
 }
 .header .action {
   margin-left: 49px;
+}
+/****************hero***************/
+.hero {
+  padding: 56px;
+  background-color: #f6f1f1;
+}
+.hero .body {
+  display: flex;
+}
+/* ***********hero left********* */
+.hero .media-block {
+  position: relative;
+  width: 48%;
+}
+.hero .media-block .img {
+  width: 470px;
+  height: 685px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.hero .hero-summary {
+  width: 270px;
+  padding: 24px;
+  position: absolute;
+  bottom: 48px;
+  right: 0;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 16px 32px 0px rgb(231, 231, 197);
+}
+.hero-summary .item {
+  display: flex;
+  align-items: center;
+}
+.hero-summary .item + .item {
+  margin-top: 22px;
+}
+.hero-summary .icon {
+  width: 48px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c9dbc6;
+}
+.hero-summary .icon2 {
+  background-color: #f3b9b9;
+}
+.hero-summary .icon3 {
+  background-color: #a3a2e3;
+}
+.hero-summary .info {
+  margin-left: 16px;
+}
+.hero-summary .lable {
+  color: #f7eaea;
+  font-size: 1.2rem;
+  line-height: 1.86;
+}
+.hero-summary .title {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+/* *********hero right********* */
+.hero .content-block {
+  width: 52%;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.hero .heading {
+  color: black;
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: -1.16px;
+}
+.hero .desc {
+  margin-top: 22px;
+  color: #14171f;
+  font-size: 1.4rem;
+  line-height: 1.67;
+}
+.hero .cta-group {
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+}
+.hero-cta {
+  min-width: 180px;
+  line-height: 64px;
+  background-color: var(--frimary-color);
+}
+.hero .watch-video {
+  /* bỏ viền */
+  border: none;
+  /* Nền trong suốt */
+  background: transparent;
+  display: flex;
+  /* Kết quả watch video bị xuống dòng, do ban đầu thẻ button là inline. Inline thì nằm trên cùng 1 dòng với thẻ a. */
+  /* Cần tác động display flex vào thẻ cả thẻ cta-group */
+  margin-left: 28px;
+  align-items: center;
+  cursor: pointer;
+}
+.hero .watch-video .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgb(143, 136, 136);
+}
+.hero .watch-video span {
+  margin-left: 14px;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.hero .desc-recent {
+  margin-top: 48px;
+}
+.hero .stats strong {
+  margin-right: 15px;
+  color: black;
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.23;
+}
+.hero .stats strong:nth-child(2) {
+  margin-left: 28px;
 }
