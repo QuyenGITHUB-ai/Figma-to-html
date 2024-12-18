@@ -16,7 +16,7 @@ body {
 
   font-family: "Work Sans", sans-serif;
 }
-/*Tạo nhóm dùng chung để code thuộc tính dùng chung ....COMMOM....cho cả trang web */
+/*.......COMMON........ Tạo nhóm dùng chung để code thuộc tính dùng chung cho cả trang web */
 a {
   text-decoration: none;
 }
@@ -49,6 +49,18 @@ a {
   min-width: 100% - 48px;
   margin-left: auto;
   margin-right: auto;
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+.break-all {
+  word-break: break-all;
 }
 /* ............Header........ */
 .header {
@@ -284,6 +296,7 @@ nav ul {
   gap: 30px;
 }
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   background: #f7f5f5;
   box-shadow: #2653c5;
@@ -310,7 +323,7 @@ nav ul {
   align-items: center;
   justify-content: space-between;
 }
-.popular .course-item .title {
+.popular .course-item .title a {
   color: black;
   font-size: 1.8rem;
   font-weight: 600;
