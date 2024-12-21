@@ -421,7 +421,7 @@ nav ul {
   font-style: italic;
   line-height: 1.54;
 }
-/* *********feature****** */
+/* *********feature1****** */
 .feature {
   margin-top: 135px;
   padding: 65px 0%;
@@ -466,4 +466,18 @@ nav ul {
   color: black;
   align-items: center;
   justify-content: center;
+}
+/* *********feature-2nd****** */
+.feature-2nd .body {
+  flex-direction: row-reverse;
+}
+.feature-2nd {
+  margin-top: 70px;
+}
+.feature-2nd .content {
+  width: 49%;
+}
+.feature-2nd .image img {
+  width: 470px;
+  height: 440px;
 }
